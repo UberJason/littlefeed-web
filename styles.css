@@ -1,0 +1,154 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Pure white background */
+    color: #333;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-image {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .hero-container {
+        justify-content: center; /* Center content on larger screens */
+    }
+
+    .hero-image {
+        display: block;
+        margin-right: 20px;
+        width: 400px; /* Adjust as needed */
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header img {
+    width: 300px;
+    height: auto;
+}
+
+header .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Right-align the header container */
+    padding: 0 20px; /* Add some padding to the sides */
+    margin: 0 auto;
+}
+
+header .header-container .main-title,
+header .header-container .main-subtitle {
+    text-align: right; /* Right-align text */
+    margin-right: 50px; /* Add right margin */
+}
+
+header .main-title {
+    font-size: 48px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(108, 108, 238);
+    margin: 1rem 0 0.5rem;
+}
+
+header .main-subtitle {
+    font-size: 29px;
+    font-weight: 300;
+    margin: 0 0 1.5rem;
+}
+
+header .app-store-button img {
+    width: 150px;
+    height: auto;
+}
+
+.feature-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    align-items: center;
+    width: 100%;
+}
+
+.feature-section img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 1rem;
+    flex: 1 1 45%;
+}
+
+.feature-text {
+    flex: 1 1 45%;
+    padding: 1rem;
+}
+
+.feature-text h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: rgb(108, 108, 238);
+    font-weight: 400;
+}
+
+.feature-text p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .feature-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-section img,
+    .feature-text {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .feature-section:nth-child(odd) {
+        flex-direction: row-reverse; /* Image right, text left */
+    }
+
+    .feature-section:nth-child(even) {
+        flex-direction: row; /* Image left, text right */
+    }
+
+    .feature-text {
+        text-align: left;
+    }
+}
