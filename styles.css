@@ -45,6 +45,12 @@ header img {
     height: auto;
 }
 
+@media (max-width: 768px) {
+    header img {
+        width: 180px; /* Smaller logo on smaller screens */
+    }
+}
+
 header .header-container {
     display: flex;
     flex-direction: column;
@@ -59,8 +65,15 @@ header .header-container .main-subtitle {
     margin-right: 50px; /* Add right margin */
 }
 
+@media (max-width: 768px) {
+    header .header-container .main-title,
+    header .header-container .main-subtitle {
+        margin-right: 30px; /* Adjusted right margin for smaller screens */
+    }
+}
+
 header .main-title {
-    font-size: 48px;
+    font-size: 48px; /* Large screen size font */
     font-weight: 300;
     font-style: italic;
     color: rgb(108, 108, 238);
@@ -71,6 +84,16 @@ header .main-subtitle {
     font-size: 29px;
     font-weight: 300;
     margin: 0 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+    header .main-title {
+        font-size: 24px; /* Smaller screen size font */
+    }
+
+    header .main-subtitle {
+        font-size: 18px;
+    }
 }
 
 header .app-store-button img {
