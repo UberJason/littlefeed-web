@@ -72,7 +72,8 @@ header .header-container {
 }
 
 header .header-container .main-title,
-header .header-container .main-subtitle {
+header .header-container .main-subtitle,
+.app-store-button {
     text-align: right; /* Right-align text */
     margin-right: 50px; /* Add right margin */
 }
