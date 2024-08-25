@@ -19,13 +19,25 @@ body {
     max-width: 50%;
 }
 
+.hero-image-wrapper {
+    display: none;
+}
+
 .hero-image {
     display: none;
 }
 
 @media (min-width: 768px) {
+    .header-container {
+        max-width: 100%;
+    }
+
     .hero-container {
         justify-content: center; /* Center content on larger screens */
+    }
+
+    .hero-image-wrapper {
+        display: block;
     }
 
     .hero-image {
